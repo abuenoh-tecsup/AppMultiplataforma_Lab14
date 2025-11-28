@@ -22,6 +22,7 @@ class SaveMoneyApp extends StatelessWidget {
         title: "SaveMoney",
         theme: ThemeData(
           primarySwatch: Colors.green,
+          fontFamily: 'Outfit',
         ),
         initialRoute: '/',
         routes: {
