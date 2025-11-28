@@ -14,15 +14,24 @@ class SaveMoneyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => TransactionProvider()),
-      ],
+      providers: [ChangeNotifierProvider(create: (_) => TransactionProvider())],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: "SaveMoney",
         theme: ThemeData(
           primarySwatch: Colors.green,
           fontFamily: 'Outfit',
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Color(0xFF0D0F36),
+            foregroundColor: Colors.white, // <-- color del título y acciones
+            iconTheme: IconThemeData(color: Colors.white),
+            titleTextStyle: TextStyle(
+              color: Colors.white,
+              fontSize: 20,
+              fontFamily: "Outfit",
+              fontWeight: FontWeight.w600,
+            ),
+          ),
         ),
         initialRoute: '/',
         routes: {
