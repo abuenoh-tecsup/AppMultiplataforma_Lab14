@@ -251,7 +251,7 @@ class _RegistroViewState extends State<RegistroView> {
                   e,
                   style: const TextStyle(
                     fontFamily: "Outfit",
-                    color: Colors.black, // 👈
+                    color: Colors.black,
                   ),
                 ),
               ),
@@ -261,9 +261,9 @@ class _RegistroViewState extends State<RegistroView> {
         decoration: const InputDecoration(border: InputBorder.none),
         style: const TextStyle(
           fontFamily: "Outfit",
-          color: Colors.black, // 👈
+          color: Colors.black,
         ),
-        dropdownColor: Colors.white, // 👈 menú desplegable también blanco
+        dropdownColor: Colors.white,
       ),
     );
   }

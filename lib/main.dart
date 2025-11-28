@@ -23,7 +23,7 @@ class SaveMoneyApp extends StatelessWidget {
           fontFamily: 'Outfit',
           appBarTheme: const AppBarTheme(
             backgroundColor: Color(0xFF0D0F36),
-            foregroundColor: Colors.white, // <-- color del título y acciones
+            foregroundColor: Colors.white,
             iconTheme: IconThemeData(color: Colors.white),
             titleTextStyle: TextStyle(
               color: Colors.white,

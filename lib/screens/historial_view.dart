@@ -24,7 +24,7 @@ class _HistorialViewState extends State<HistorialView> {
     final items = provider.transactions;
 
     return Scaffold(
-      backgroundColor: const Color(0xFFF3F4F6), // gris suave para contraste
+      backgroundColor: const Color(0xFFF3F4F6),
 
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(110),
@@ -137,7 +137,6 @@ class _HistorialViewState extends State<HistorialView> {
                       ),
                     ),
 
-                    // 👉 EDITAR
                     onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(

@@ -24,7 +24,7 @@ class TransactionFields {
 
 class TransactionModel {
   int? id;
-  final String type; // ingreso / gasto
+  final String type;
   final String category;
   final double amount;
   final String? description;
