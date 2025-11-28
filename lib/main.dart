@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:savemoney/providers/transaction_provider.dart';
 import 'package:savemoney/screens/historial_view.dart';
+import 'package:savemoney/screens/inicio_view.dart';
 
 void main() {
   runApp(const SaveMoneyApp());
@@ -22,7 +23,11 @@ class SaveMoneyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.green,
         ),
-        home: const HistorialView(),
+        initialRoute: '/',
+        routes: {
+          '/': (context) => const InicioView(),
+          '/historial': (context) => const HistorialView(),
+        },
       ),
     );
   }
